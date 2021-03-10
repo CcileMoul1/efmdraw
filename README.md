@@ -17,7 +17,7 @@ It could also be a Matlab structure such as
 * ```model.irrev``` is a boolean row-vector containing one element for each efm of the network. ```model.irrev(i)``` is equal to 1 if the ith efm is irreversible and 0 if this efm is reversible. It corresponds to ```ex.irrev_ems``` when ```ex``` is the result given by Metatool.
 * ```model.ems``` is the matrix of the elementary flux modes: ```model.ems(:,i)``` is the ith efm. It corresponds to the product ```ex.sub' * ex.rd_ems``` when ```ex``` is the result given by Metatool.
 * ```model.names``` is a cell array containing the name of each reaction. It correspond to ```ex.react_name``` when ```ex``` is the result given by Metatool.
-* ```model.numbers``` is a vector containing the numbers of each efm. Usually it is the vector ```1:length(model.irrev)``` but it could be any vector of number having the same length as ```model.irrev```. Be carreful to avoid repetition: ```model.numbers``` is used to label the .xml files (see bellow).
+* ```model.numbers``` is a vector containing the numbers of each efm. Usually it is the vector ```1:length(model.irrev)``` but it could be any vector of number having the same length as ```model.irrev```. Be careful to avoid repetition: ```model.numbers``` is used to label the .xml files (see bellow).
 
 When ```model``` is a structure and not a path, Metatool is not used. So one can use this when the efms are obtained with another method or when some filters are applied to the efm list (see drawThermo).
 
