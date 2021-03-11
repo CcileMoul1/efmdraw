@@ -19,7 +19,7 @@ It could also be a Matlab structure such as
 * ```model.names``` is a cell array containing the name of each reaction. It correspond to ```ex.react_name``` when ```ex``` is the result given by Metatool.
 * ```model.numbers``` is a vector containing the numbers of each efm. Usually it is the vector ```1:length(model.irrev)``` but it could be any vector of number having the same length as ```model.irrev```. Be careful to avoid repetition: ```model.numbers``` is used to label the .xml files (see bellow).
 
-When ```model``` is a structure and not a path, Metatool is not used. So one can use this when the efms are obtained with another method or when some filters are applied to the efm list (see drawThermo).
+When ```model``` is a structure and not a path, Metatool is not used. So one can use this when the efms are obtained with another method or when some filters are applied to the efm list (see drawThermo (will be linked soon)).
 
 ### ```drawing_design```
 This parameter is a string containing the path to a .xml file created with [CellDesigner](http://www.celldesigner.org/). It is the graphic representation of the network. Every efm will be drawn according to this file. **Warning** Each reaction has to have a name (corresponding to ```model.names``` or the one in the Metatool file).
